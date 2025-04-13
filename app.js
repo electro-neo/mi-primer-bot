@@ -51,6 +51,9 @@ main().catch((error) => {
 
 // Configuración del servidor Express
 const PORT = process.env.PORT || 3000; // Render asigna dinámicamente el puerto
+app.get('/', (req, res) => {
+    res.send('¡El servidor está funcionando correctamente!');
+});
 app.listen(PORT, () => {
     console.log(`Servidor Express ejecutándose en el puerto ${PORT}`);
 });
