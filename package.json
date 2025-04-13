@@ -17,7 +17,7 @@
         "@bot-whatsapp/portal": "latest",
         "@bot-whatsapp/provider": "^0.1.38",
         "@eslint/migrate-config": "^1.4.1",
-        "@whiskeysockets/baileys": "^6.17.16",
+        "@whiskeysockets/baileys": "^6.7.16",
         "cache-manager": "5.2.4",
         "sharp": "^0.30.7",
         "wa-sticker-formatter": "^1.6.0"
