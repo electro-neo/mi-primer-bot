@@ -19,7 +19,7 @@
         "@eslint/migrate-config": "^1.4.1",
         "@whiskeysockets/baileys": "^6.7.16",
         "cache-manager": "5.2.4",
-        "sharp": "^0.30.7",
+        "sharp": "^0.32.6",
         "wa-sticker-formatter": "^1.6.0"
     },
     "devDependencies": {
