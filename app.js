@@ -41,16 +41,8 @@ const main = async () => {
 
     // Inicialización del portal QR
     console.log("📸 Inicializando el portal QR...");
-    let lastQRUpdate = Date.now(); // Marca de tiempo de la última actualización del QR
-
     QRPortalWeb({
         port: 10001,
-        onQRCodeUpdated: () => {
-            const now = Date.now();
-            const timeSinceLastUpdate = (now - lastQRUpdate) / 1000; // Tiempo en segundos
-            console.log(`🔄 Código QR actualizado. Tiempo desde la última actualización: ${timeSinceLastUpdate.toFixed(2)} segundos`);
-            lastQRUpdate = now;
-        },
     });
     console.log("✅ Portal QR inicializado correctamente en el puerto 10001.");
 
