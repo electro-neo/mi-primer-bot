@@ -13,9 +13,6 @@ console.log("Iniciando el servidor...");
 const flowPrincipal = addKeyword(['hola', 'ole', 'alo'])
     .addAnswer('🙌 Hola bienvenido a este *Chatbot*');
 
-// Configuración del puerto para el portal QR
-const PORT = process.env.PORT || 3000; // Render asigna dinámicamente el puerto
-
 // Función principal
 const main = async () => {
     console.log("Ejecutando la función principal...");
@@ -40,9 +37,9 @@ const main = async () => {
         database: adapterDB,
     });
 
-    // Inicialización del portal QR con un puerto dinámico
+    // Inicialización del portal QR en un puerto diferente
     console.log("Inicializando el portal QR...");
-    QRPortalWeb({ port: PORT });
+    QRPortalWeb({ port: 10001 }); // Cambia a un puerto que no esté en uso
 
     console.log("El bot se está ejecutando correctamente.");
 };
@@ -52,7 +49,8 @@ main().catch((error) => {
     console.error("Error al ejecutar la función principal:", error);
 });
 
-// Configuración del puerto para Render
+// Configuración del servidor Express
+const PORT = process.env.PORT || 3000; // Render asigna dinámicamente el puerto
 app.listen(PORT, () => {
-    console.log(`Servidor ejecutándose en el puerto ${PORT}`);
+    console.log(`Servidor Express ejecutándose en el puerto ${PORT}`);
 });
