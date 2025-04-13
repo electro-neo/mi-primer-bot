@@ -37,9 +37,9 @@ const main = async () => {
         database: adapterDB,
     });
 
-    // Inicialización del portal QR en un puerto diferente
+    // Inicialización del portal QR
     console.log("Inicializando el portal QR...");
-    QRPortalWeb({ port: 10001 }); // Cambia a un puerto que no esté en uso
+    QRPortalWeb();
 
     console.log("El bot se está ejecutando correctamente.");
 };
