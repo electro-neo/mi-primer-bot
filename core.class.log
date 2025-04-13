@@ -1,0 +1,40 @@
+[handleMsg]:  {
+  key: {
+    remoteJid: '584121763710@s.whatsapp.net',
+    fromMe: false,
+    id: 'A5D613EA82D8AAFAB86326B2B0168BDE',
+    participant: undefined
+  },
+  messageTimestamp: 1744418728,
+  pushName: 'DN',
+  broadcast: false,
+  message: Message {
+    conversation: 'Ole',
+    messageContextInfo: MessageContextInfo {
+      deviceListMetadata: [DeviceListMetadata],
+      deviceListMetadataVersion: 2,
+      messageSecret: [Uint8Array]
+    }
+  },
+  verifiedBizName: 'DN',
+  body: 'Ole',
+  from: '584121763710'
+}
+[QUEUE_SE_ENVIO]:  {
+  ref: 'ans_04189377-f962-4ea2-9603-4616007d3f9a',
+  keyword: 'key_a8d6ac6e-a3e9-4b07-9b85-f4bc6c6a16dc',
+  answer: '🙌 Hola bienvenido a este *Chatbot*',
+  options: {
+    media: null,
+    buttons: [],
+    capture: false,
+    child: null,
+    delay: 0,
+    idle: null,
+    ref: null,
+    nested: [],
+    keyword: {},
+    callback: false
+  },
+  refSerialize: '43a2ffa798b99ca835e9a3fe934ee8a4'
+}
