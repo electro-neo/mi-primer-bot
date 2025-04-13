@@ -1,4 +1,4 @@
-FROM node:18-bullseye-slim as bot
+FROM node:18-slim as bot
 WORKDIR /app
 COPY package*.json ./
 RUN npm install sharp@0.32.6 --legacy-peer-deps && npm install --legacy-peer-deps
